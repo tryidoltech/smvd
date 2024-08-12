@@ -3,9 +3,6 @@
  ------------- Define color variables that can be reused throughout the stylesheet.
 ============================================================================================*/
 
-
-
-
 :root {
     --saffron-orange: #FF6F00; 
     --maroon: #800000;
@@ -15,19 +12,14 @@
     --royal-blue: #4169E1;
     --light-brown: #8B4513;
 }
+::-webkit-scrollbar{
+    width: 0;
+}
 
-
-
-
-
-/* =======================================================================================================
-  --------------------Universal Selector: Reset margins and paddings for all elements----------------------
- ------------This ensures consistency across different browsers by removing default margins and paddings.--
+/* =========================================================================================================
+  --------------------Universal Selector: Reset margins and paddings for all elements-----------------------
+ ---------This ensures consistency across different browsers by removing default margins and paddings.------
 ===========================================================================================================*/
-
-
-
-
 
 * {
     margin: 0;
@@ -41,14 +33,9 @@ html, body {
     font-family: sans-serif;
 }
 
-
-
-/* ----------------------------------------------------------------------- */
+/* ======================================================================= */
 /* ----------------------------Code For Nav Bar--------------------------- */
-/* ----------------------------------------------------------------------- */
-
-
-
+/* ======================================================================= */
 
 .navbar {
     display: flex;
@@ -103,6 +90,132 @@ html, body {
     transition: 0.4s;
 }
 
+/* ======================================================================= */
+/* -----------------------Hero Section with Slider------------------------ */
+/* ======================================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--golden-yellow);
+}
+
+/* ======================================================================= */
+/* ------------------------------history-section-------------------------- */
+/* ======================================================================= */
+
+.history-section {
+    background-color: var(--white);
+    padding: 40px 20px;
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.history-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.history-text {
+    flex: 2;
+    color: var(--deep-red);
+}
+
+.history-text h2 {
+    font-size: 2em;
+    color: var(--maroon);
+    border-bottom: 3px solid var(--golden-yellow);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.history-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+}
 
 
 
@@ -113,7 +226,20 @@ html, body {
 
 
 
-/* Responsive Section */
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================= */
+/* -----------------------------Responsive Section------------------------ */
+/* ======================================================================= */
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -126,11 +252,11 @@ html, body {
         align-items: center;
         justify-content: center;
         width: 50%;
+        z-index: 999;
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
     }
     
-
     .nav-links li {
         margin: 20px 0;
     }
@@ -141,6 +267,7 @@ html, body {
 
     .hamburger {
         display: flex;
+        z-index: 9999999;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -154,9 +281,38 @@ html, body {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
+
+    /* history section */
+
+    .history-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-text h2 {
+        font-size: 1.5em;
+    }
+
+    .history-text p {
+        font-size: 0.9em;
+    }
+
+    .history-image {
+        margin-bottom: 20px;
+    }
 }
 
+@media (max-width: 576px) {
+    .slider-container, .slide {
+        height: 50vh;
+    }
+    
+    .prev, .next {
+        font-size: 1.5em;
+    }
 
-
-
-
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}

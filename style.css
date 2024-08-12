@@ -180,7 +180,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1050px;
     margin: 0 auto;
     gap: 20px;
 }
@@ -437,6 +437,153 @@ html, body {
 }
 
 /* ======================================================================= */
+/* -----------------------------Services section-------------------------- */
+/* ======================================================================= */
+
+
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.services-heading {
+    font-size: 16px;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.services-title {
+    font-size: 32px;
+    color: var(--maroon);
+    border-bottom: 4px solid var(--golden-yellow);
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: var(--golden-yellow);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    width: 48%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #f44336;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-size: 20px;
+    color: var(--maroon);
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* ======================================================================= */
+/* -----------------------------Trolley section--------------------------- */
+/* ======================================================================= */
+
+.trolley-section {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.trolley-title {
+    font-size: 32px;
+    color: var(--maroon);
+    border-bottom: 4px solid var(--golden-yellow) ;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.trolley-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trolley-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 48%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    border: 1px solid rgb(233, 233, 233);
+}
+
+.trolley-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.trolley-subtitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.trolley-caption {
+    font-size: 14px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.trolley-description {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.trolley-button {
+    background-color: var(--maroon);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.trolley-button:hover {
+    background-color: #e67e22;
+}
+
+
+
+
+
+
+
+/* ======================================================================= */
 /* -----------------------------Responsive Section------------------------ */
 /* ======================================================================= */
 
@@ -528,6 +675,14 @@ html, body {
     .rates-image {
         margin-top: 20px;
     }
+
+    .trolley-container {
+        flex-direction: column;
+    }
+
+    .trolley-card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 576px) {
@@ -572,5 +727,13 @@ html, body {
 
     .location {
         font-size: 0.85em;
+    }
+    /* Services Section */
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
     }
 }

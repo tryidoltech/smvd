@@ -219,10 +219,6 @@ html, body {
 }
 
 
-
-
-
-
 /* ======================================================================= */
 /* ----------------------------------Rates-section------------------------ */
 /* ======================================================================= */
@@ -333,6 +329,120 @@ html, body {
     display: block;
 }
 /* ======================================================================= */
+/* -----------------------------Rates  Section 2 ------------------------ */
+/* ======================================================================= */
+
+
+
+.rates-section {
+    background-color: var(--white);
+    padding: 40px 20px;
+}
+
+.rates-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rates-header h2 {
+    font-size: 2em;
+    color: var(--maroon);
+}
+
+.rates-header .highlight {
+    color: var(--deep-red);
+}
+
+.rates-header p {
+    color: var(--light-brown);
+    margin-top: 10px;
+}
+
+.rates-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.rates-info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.rates-path {
+    margin-bottom: 20px;
+}
+
+.rate-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.location {
+    background-color: var(--golden-yellow);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.step-indicator {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: var(--deep-red);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.line {
+    width: 2px;
+    height: 40px;
+    background-color: var(--deep-red);
+    margin-left: 14px;
+}
+
+.prebook-info {
+    background-color: var(--saffron-orange);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rates-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rates-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+/* ======================================================================= */
 /* -----------------------------Responsive Section------------------------ */
 /* ======================================================================= */
 
@@ -395,6 +505,20 @@ html, body {
 
     .history-image {
         margin-bottom: 20px;
+    }
+
+
+    .rates-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .rates-info {
+        max-width: 100%;
+    }
+
+    .rates-image {
+        margin-top: 20px;
     }
 
 

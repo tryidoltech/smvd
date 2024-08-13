@@ -366,8 +366,9 @@ span {
 
 .history-text p {
   font-size: 1em;
-  line-height: 1.6;
+  line-height: 1.5;
   text-align: justify;
+  height: 170px;
 }
 
 /* ================================================================================ */

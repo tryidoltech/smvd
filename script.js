@@ -111,6 +111,12 @@ document.addEventListener('DOMContentLoaded', function () {
 //     window.addEventListener('scroll', handleScroll);
 // });
 
+var typed = new Typed('#element', {
+    strings: ["Like most old shrines, it is difficult to mention as to when exactly the pilgrimage to this holy shrine started. A geological study of this holy cave has indicated that it is almost a million years old. The first mention of this holy cave is noted in the epic  Mahabharata. It was the time when the Pandavas and Kauravas were Facing each other in the battlefield of Kurukshetra; upon the advice of Shri Krishna, Arjun meditated there to seek blessings for victory. This is when Arjun addresses the mother goddess as JambooKatak Chityaisu Nityam Sannihitalaye', which means 'you who always dwell in the temple on the slope of the mountain in Jamboo."],
+    typeSpeed: 20,
+    loop: true
+});
+
 
 var tl = gsap.timeline();
 tl.from(".logo", {
@@ -119,6 +125,5 @@ tl.from(".logo", {
     stagger: .1
 })
 tl.from(".hamburger", {
-   
-    opacity:0
+   opacity:0
 })

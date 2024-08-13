@@ -200,7 +200,9 @@ span {
   text-decoration: none;
   color: white;
 }
-
+#tryidol{
+  display: none;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -1157,10 +1159,17 @@ footer {
     margin-top: 20px;
   }
 
-  a :active {
-    background-color: none;
-    color: none;
+
+  #tryidol{
+    display: block;
+    position: relative;
+    top: 260px;
+    a{
+      color: rgba(255, 255, 255, 0.405);
+
+    }
   }
+
 }
 
 @media (max-width: 576px) {

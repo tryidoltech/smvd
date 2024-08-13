@@ -1,6 +1,4 @@
-
 //  Nav Bar Code
-
 
 document.addEventListener("DOMContentLoaded", function () {
     // Hamburger menu toggle
@@ -12,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.toggle('active');
     });
 
-    // Slider functionality
+
+
+
+// Slider functionality
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     const prev = document.querySelector(".prev");
@@ -49,3 +50,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setInterval(nextSlide, 5000);
 });
+

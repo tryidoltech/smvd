@@ -16,7 +16,6 @@
   width: 0;
 }
 
-
 /* =========================================================================================================
   --------------------Universal Selector: Reset margins and paddings for all elements-----------------------
  ---------This ensures consistency across different browsers by removing default margins and paddings.------
@@ -790,7 +789,6 @@ color: var(--deep-red);
 /* -----------------------------Footer Section---------------------------- */
 /* ======================================================================= */
 
-
 footer {
     background-color: #470000;
     color: #FFFFFF;
@@ -860,11 +858,6 @@ footer {
     margin-top: 20px;
     border-top: 4px solid var(--golden-yellow);
 }
-
-
-
-
-
 
 /* ======================================================================= */
 /* -----------------------------Responsive Section------------------------ */
@@ -1015,7 +1008,6 @@ footer {
 a :active{
     background-color: none;
     color: none;
-
 }
 }
 

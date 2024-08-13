@@ -128,14 +128,19 @@ tl.from(".hamburger", {
    opacity:0
 })
 
-gsap.from(".history-image, .history-image img",{
+
+gsap.from("#rates1 .location",{
     opacity:0,
+    x:-200,
     duration:.5,
-    x: -200,
+    scrub:5,
+    stagger: 1,
     scrollTrigger:{
-        trigger:".history-image",
+        trigger:"#rates2 .location",
         scroller:"body",
-        start:"top 40%",
-        markers:true
+        start:"top 70%",
+        markers:true,
+        delay:.5
     }
 })
+

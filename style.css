@@ -425,6 +425,7 @@ video {
 .rates-section {
   background-color: var(--white);
   padding: 40px 20px;
+  position: relative;
 }
 
 .rates-header {
@@ -464,7 +465,24 @@ video {
 
 .rates-path {
   margin-bottom: 20px;
+  /* display: flex;
+  border: 1px solid red; */
 }
+.line-2{
+  height: 140px;
+  width: 20px;
+  border-left: 4px dashed black;
+  position: absolute;
+  right: 32vw;
+  top: 160px;
+}
+.pin img {
+  animation: moveUpDown 4s ease-in-out infinite;
+  height: 50px;
+  position: absolute;
+  right: 31.6vw;
+  top: 250px;
+} 
 
 .rate-step {
   display: flex;
@@ -525,6 +543,23 @@ video {
   width: 100%;
   height: auto;
   display: block;
+}
+
+
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  45% {
+    transform: translateY(-60px);
+  }
+  55% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ======================================================================= */
@@ -1180,6 +1215,22 @@ footer {
 
     }
   }
+  .line-2{
+    height: 140px;
+    width: 20px;
+    border-left: 4px dashed black;
+    position: absolute;
+    right: 10vw;
+    top: 415px;
+   
+  }
+  .pin img {
+    animation: moveUpDown 4s ease-in-out infinite;
+    height: 50px;
+    position: absolute;
+    right: 8.5vw;
+    top: 505px;
+  } 
 
 }
 

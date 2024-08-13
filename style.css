@@ -16,6 +16,7 @@
   width: 0;
 }
 
+
 /* =========================================================================================================
   --------------------Universal Selector: Reset margins and paddings for all elements-----------------------
  ---------This ensures consistency across different browsers by removing default margins and paddings.------
@@ -86,6 +87,7 @@ body {
   width: 30px;
   height: 22px;
   justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger .bar {
@@ -1009,6 +1011,11 @@ footer {
 .footer-section.social {
     justify-content: center;
     margin-top: 20px;
+}
+a :active{
+    background-color: none;
+    color: none;
+
 }
 }
 

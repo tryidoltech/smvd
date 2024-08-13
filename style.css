@@ -1034,6 +1034,10 @@ footer {
     transform: translateY(-9px) rotate(-45deg);
   }
 
+  .hero{
+    margin-top: 90px;
+  }
+
   /* history section */
 
   .history-content {

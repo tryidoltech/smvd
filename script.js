@@ -131,12 +131,11 @@ tl.from(".hamburger", {
 gsap.from(".history-image, .history-image img",{
     opacity:0,
     duration:.5,
-    scale:1.5,
     x: -200,
     scrollTrigger:{
         trigger:".history-image",
         scroller:"body",
-        start:"top 60%",
+        start:"top 40%",
         markers:true
     }
 })

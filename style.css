@@ -78,7 +78,7 @@ span {
 }
 
 #back-to-top::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -113,7 +113,6 @@ span {
     stroke-dasharray: 100 0;
   }
 }
-
 
 /* 
 #back-to-top {
@@ -200,9 +199,11 @@ span {
   text-decoration: none;
   color: white;
 }
-#tryidol{
+
+#tryidol {
   display: none;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -375,7 +376,6 @@ span {
 /* -------------------------instructional-video-section---------------------------- */
 /* ================================================================================ */
 
-
 .instructional-video-section {
   padding: 50px 0;
 }
@@ -468,7 +468,8 @@ video {
   /* display: flex;
   border: 1px solid red; */
 }
-.line-2{
+
+.line-2 {
   height: 140px;
   width: 20px;
   border-left: 4px dashed black;
@@ -476,13 +477,14 @@ video {
   right: 32vw;
   top: 160px;
 }
+
 .pin img {
   animation: moveUpDown 4s ease-in-out infinite;
   height: 50px;
   position: absolute;
   right: 31.6vw;
   top: 250px;
-} 
+}
 
 .rate-step {
   display: flex;
@@ -545,18 +547,19 @@ video {
   display: block;
 }
 
-
-
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);
   }
+
   45% {
     transform: translateY(-60px);
   }
+
   55% {
     transform: translateY(-120px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -714,12 +717,15 @@ video {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: 2s;
 }
-.service-card:hover{
+
+.service-card:hover {
   background-color: var(--saffron-orange);
-  p{
+
+  p {
     color: wheat;
   }
-  h4{
+
+  h4 {
     color: white;
   }
 }
@@ -981,7 +987,7 @@ video {
 
 footer {
   background-color: #470000;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px 10px;
   font-family: Arial, sans-serif;
 }
@@ -1021,7 +1027,7 @@ footer {
 }
 
 .footer-section ul li a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
 }
@@ -1205,33 +1211,32 @@ footer {
     margin-top: 20px;
   }
 
-
-  #tryidol{
+  #tryidol {
     display: block;
     position: relative;
     top: 230px;
-    a{
-      color: rgba(255, 255, 255, 0.405);
 
+    a {
+      color: rgba(255, 255, 255, 0.405);
     }
   }
-  .line-2{
+
+  .line-2 {
     height: 140px;
     width: 20px;
     border-left: 4px dashed black;
     position: absolute;
     right: 10vw;
     top: 415px;
-   
   }
+
   .pin img {
     animation: moveUpDown 4s ease-in-out infinite;
     height: 50px;
     position: absolute;
     right: 8.5vw;
     top: 505px;
-  } 
-
+  }
 }
 
 @media (max-width: 576px) {

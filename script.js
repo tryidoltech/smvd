@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Slider functionality
+    // Slider functionality
     const slides = document.querySelectorAll(".slide");
     const dots = document.querySelectorAll(".dot");
     const prev = document.querySelector(".prev");
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('back-to-top');
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-    
+
     function handleScroll() {
         const scrollTop = window.scrollY;
         const scrollPercentage = (scrollTop / documentHeight) * 100;
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
 // document.addEventListener('DOMContentLoaded', function () {
 //     const backToTopButton = document.getElementById('back-to-top');
 //     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-    
+
 //     function handleScroll() {
 //         const scrollTop = window.scrollY;
 //         const scrollPercentage = (scrollTop / documentHeight) * 100;
-    
+
 //         if (scrollTop > 200) {
 //             backToTopButton.classList.add('show');
 //         } else {
@@ -121,94 +121,94 @@ var typed = new Typed('#element', {
 var tl = gsap.timeline();
 tl.from(".logo", {
     x: -200,
-    opacity:0,
+    opacity: 0,
     stagger: .1
 })
 tl.from(".hamburger", {
-   opacity:0
+    opacity: 0
 })
 
-gsap.from("#rates1 .rates-image img",{
-    opacity:0,
-    scale:1.3,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates1 .rates-image img", {
+    opacity: 0,
+    scale: 1.3,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates1 .rates-image img",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates1 .rates-image img",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }
 })
-gsap.from("#rates2 .rates-image img",{
-    opacity:0,
-    scale:1.3,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates2 .rates-image img", {
+    opacity: 0,
+    scale: 1.3,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates2 .rates-image img",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates2 .rates-image img",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }
 })
-gsap.from("#rates3 .rates-image img",{
-    opacity:0,
-    scale:1.3,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates3 .rates-image img", {
+    opacity: 0,
+    scale: 1.3,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates3 .rates-image img",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates3 .rates-image img",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }
 })
 
-gsap.from("#rates1 .location",{
-    opacity:0,
-    x:-200,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates1 .location", {
+    opacity: 0,
+    x: -200,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates1 .location",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates1 .location",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }
 })
-gsap.from("#rates2 .location",{
-    opacity:0,
-    x:-200,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates2 .location", {
+    opacity: 0,
+    x: -200,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates2 .location",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates2 .location",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }
 })
-gsap.from("#rates3 .location",{
-    opacity:0,
-    x:-200,
-    duration:.5,
-    scrub:5,
+gsap.from("#rates3 .location", {
+    opacity: 0,
+    x: -200,
+    duration: .5,
+    scrub: 5,
     stagger: 1,
-    scrollTrigger:{
-        trigger:"#rates3 .location",
-        scroller:"body",
-        start:"top 70%",
+    scrollTrigger: {
+        trigger: "#rates3 .location",
+        scroller: "body",
+        start: "top 70%",
         // markers:true,
         // delay:.5
     }

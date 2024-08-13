@@ -128,6 +128,48 @@ tl.from(".hamburger", {
    opacity:0
 })
 
+gsap.from("#rates1 .rates-image img",{
+    opacity:0,
+    scale:1.3,
+    duration:.5,
+    scrub:5,
+    stagger: 1,
+    scrollTrigger:{
+        trigger:"#rates1 .rates-image img",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+        // delay:.5
+    }
+})
+gsap.from("#rates2 .rates-image img",{
+    opacity:0,
+    scale:1.3,
+    duration:.5,
+    scrub:5,
+    stagger: 1,
+    scrollTrigger:{
+        trigger:"#rates2 .rates-image img",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+        // delay:.5
+    }
+})
+gsap.from("#rates3 .rates-image img",{
+    opacity:0,
+    scale:1.3,
+    duration:.5,
+    scrub:5,
+    stagger: 1,
+    scrollTrigger:{
+        trigger:"#rates3 .rates-image img",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+        // delay:.5
+    }
+})
 
 gsap.from("#rates1 .location",{
     opacity:0,
@@ -171,4 +213,5 @@ gsap.from("#rates3 .location",{
         // delay:.5
     }
 })
+
 

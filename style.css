@@ -677,6 +677,16 @@ video {
   width: 48%;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 2s;
+}
+.service-card:hover{
+  background-color: var(--saffron-orange);
+  p{
+    color: wheat;
+  }
+  h4{
+    color: white;
+  }
 }
 
 .service-icon {

@@ -141,6 +141,7 @@ body {
   padding: 10px;
   cursor: pointer;
   z-index: 2;
+  opacity: 0;
 }
 
 .prev {

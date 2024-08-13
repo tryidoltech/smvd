@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+
+//  Nav Bar Code
+
+
+document.addEventListener("DOMContentLoaded", function () {
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');

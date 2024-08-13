@@ -140,7 +140,7 @@ gsap.from("#rates1 .location",{
         scroller:"body",
         start:"top 70%",
         // markers:true,
-        delay:.5
+        // delay:.5
     }
 })
 gsap.from("#rates2 .location",{
@@ -154,7 +154,7 @@ gsap.from("#rates2 .location",{
         scroller:"body",
         start:"top 70%",
         // markers:true,
-        delay:.5
+        // delay:.5
     }
 })
 gsap.from("#rates3 .location",{
@@ -168,7 +168,7 @@ gsap.from("#rates3 .location",{
         scroller:"body",
         start:"top 70%",
         // markers:true,
-        delay:.5
+        // delay:.5
     }
 })
 

@@ -110,3 +110,15 @@ document.addEventListener('DOMContentLoaded', function () {
 //     backToTopButton.addEventListener('click', scrollToTop);
 //     window.addEventListener('scroll', handleScroll);
 // });
+
+
+var tl = gsap.timeline();
+tl.from(".logo", {
+    x: -200,
+    opacity:0,
+    stagger: .1
+})
+tl.from(".hamburger", {
+   
+    opacity:0
+})

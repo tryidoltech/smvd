@@ -51,10 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(nextSlide, 5000);
 });
 
-
-
-// 
-
+// back to top button
 document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('back-to-top');
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -69,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             backToTopButton.classList.remove('show');
         }
 
-        backToTopButton.style.background = `conic-gradient(#f39c12 ${scrollPercentage}%, transparent ${scrollPercentage}%)`;
+        backToTopButton.style.background = `conic-gradient(maroon ${scrollPercentage}%, transparent ${scrollPercentage}%)`;
     }
 
     function scrollToTop() {
@@ -82,3 +79,34 @@ document.addEventListener('DOMContentLoaded', function () {
     backToTopButton.addEventListener('click', scrollToTop);
     window.addEventListener('scroll', handleScroll);
 });
+
+// /* Extra JavaScript for back to top button */
+// document.addEventListener('DOMContentLoaded', function () {
+//     const backToTopButton = document.getElementById('back-to-top');
+//     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    
+//     function handleScroll() {
+//         const scrollTop = window.scrollY;
+//         const scrollPercentage = (scrollTop / documentHeight) * 100;
+    
+//         if (scrollTop > 200) {
+//             backToTopButton.classList.add('show');
+//         } else {
+//             backToTopButton.classList.remove('show');
+//         }
+
+//         // Set the background of the pseudo-element to represent the progress
+//         backToTopButton.style.setProperty('--progress', scrollPercentage);
+//         backToTopButton.style.background = `conic-gradient(#800000 ${scrollPercentage}%, transparent ${scrollPercentage}%)`;
+//     }
+
+//     function scrollToTop() {
+//         window.scrollTo({
+//             top: 0,
+//             behavior: 'smooth'
+//         });
+//     }
+
+//     backToTopButton.addEventListener('click', scrollToTop);
+//     window.addEventListener('scroll', handleScroll);
+// });

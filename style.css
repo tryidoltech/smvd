@@ -35,6 +35,134 @@ body {
 }
 
 /* ======================================================================= */
+/* ----------------------------Code For Back To Top----------------------- */
+/* ======================================================================= */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f39c12; /* Golden yellow background */
+  color: #fff;
+  border: 4px solid transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999991000;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+#back-to-top svg {
+  stroke: #fff;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+
+#back-to-top:hover {
+  background-color: #f1c40f; /* Lighter golden yellow on hover */
+}
+
+#back-to-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #f39c12; /* Golden yellow */
+  box-sizing: border-box;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: border-color 0.3s;
+}
+
+#back-to-top.progress {
+  border-color: maroon; /* Maroon border after progress */
+}
+
+#back-to-top.progress::before {
+  border-color: maroon; /* Maroon progress color */
+  animation: progressAnimation 1s linear infinite;
+}
+
+@keyframes progressAnimation {
+  0% {
+      stroke-dasharray: 0 100;
+  }
+  100% {
+      stroke-dasharray: 100 0;
+  }
+}
+
+
+/* 
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f1c40f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s, background-color 0.3s;
+  overflow: hidden;
+}
+
+#back-to-top svg {
+  stroke: #fff;
+}
+
+#back-to-top.show {
+  opacity: 1;
+}
+
+#back-to-top:hover {
+  background-color: #d4ac0d;
+}
+
+#back-to-top::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  box-sizing: border-box;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+#back-to-top.progress::before {
+  border-color: #800000;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  animation: progressAnimation 1s linear infinite;
+}
+
+@keyframes progressAnimation {
+  from {
+      stroke-dasharray: 0 100;
+  }
+  to {
+      stroke-dasharray: 100 0;
+  }
+} */
+
+/* ======================================================================= */
 /* ----------------------------Code For Nav Bar--------------------------- */
 /* ======================================================================= */
 
@@ -1062,69 +1190,4 @@ a :active{
   .service-card {
     width: 100%;
   }
-}
-
-
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #333;
-    color: #fff;
-    border: 4px solid transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99999991000;
-    opacity: 0;
-    transition: opacity 0.3s, background-color 0.3s;
-}
-
-#back-to-top svg {
-    stroke: #fff;
-}
-
-#back-to-top.show {
-    opacity: 1;
-}
-
-#back-to-top:hover {
-    background-color: #555;
-}
-
-#back-to-top::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 4px solid #333;
-    box-sizing: border-box;
-    transform: rotate(-90deg);
-    transform-origin: center;
-    transition: border-color 0.3s;
-}
-
-#back-to-top.progress {
-    border-color: transparent;
-}
-
-#back-to-top.progress::before {
-    border-color: #f39c12; /* Progress color */
-    animation: progressAnimation 1s linear infinite;
-}
-
-@keyframes progressAnimation {
-    0% {
-        stroke-dasharray: 0 100;
-    }
-    100% {
-        stroke-dasharray: 100 0;
-    }
 }

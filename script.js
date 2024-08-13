@@ -136,10 +136,38 @@ gsap.from("#rates1 .location",{
     scrub:5,
     stagger: 1,
     scrollTrigger:{
+        trigger:"#rates1 .location",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
+        delay:.5
+    }
+})
+gsap.from("#rates2 .location",{
+    opacity:0,
+    x:-200,
+    duration:.5,
+    scrub:5,
+    stagger: 1,
+    scrollTrigger:{
         trigger:"#rates2 .location",
         scroller:"body",
         start:"top 70%",
-        markers:true,
+        // markers:true,
+        delay:.5
+    }
+})
+gsap.from("#rates3 .location",{
+    opacity:0,
+    x:-200,
+    duration:.5,
+    scrub:5,
+    stagger: 1,
+    scrollTrigger:{
+        trigger:"#rates3 .location",
+        scroller:"body",
+        start:"top 70%",
+        // markers:true,
         delay:.5
     }
 })

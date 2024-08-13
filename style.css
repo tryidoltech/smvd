@@ -54,6 +54,7 @@ body {
   z-index: 99999991000;
   opacity: 0;
   transition: opacity 0.3s, background-color 0.3s, border-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #back-to-top svg {
